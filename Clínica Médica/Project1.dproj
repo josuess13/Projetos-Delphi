@@ -100,8 +100,24 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Unit1.pas">
+        <DCCReference Include="tela_principal.pas">
             <Form>Form1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="cad_pacientes.pas">
+            <Form>Form_pacientes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="cad_medicos.pas">
+            <Form>Form_medicos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="cad_especialidades.pas">
+            <Form>Form_especialidades</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="cad_agendamentos.pas">
+            <Form>Form_agendamentos</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
