@@ -4,7 +4,7 @@ object Form_pacientes: TForm_pacientes
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Pacientes'
-  ClientHeight = 571
+  ClientHeight = 771
   ClientWidth = 1094
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,4 +16,402 @@ object Form_pacientes: TForm_pacientes
   Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
+  object Label2: TLabel
+    Left = 16
+    Top = 107
+    Width = 69
+    Height = 23
+    Caption = 'C'#243'digo'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Georgia'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Top = 179
+    Width = 159
+    Height = 23
+    Caption = 'Nome Completo'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Georgia'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 283
+    Top = 107
+    Width = 197
+    Height = 23
+    Caption = 'Data de Nascimento'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Georgia'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 122
+    Top = 107
+    Width = 40
+    Height = 23
+    Caption = 'CPF'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Georgia'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 640
+    Top = 131
+    Width = 157
+    Height = 23
+    Caption = 'Buscar Paciente'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Georgia'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1094
+    Height = 81
+    Align = alTop
+    TabOrder = 6
+    object Label1: TLabel
+      Left = 32
+      Top = 24
+      Width = 322
+      Height = 35
+      Caption = 'Cadastro de Pacientes'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -29
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object DBEdit1: TDBEdit
+    Left = 16
+    Top = 136
+    Width = 81
+    Height = 31
+    Cursor = crIBeam
+    DataField = 'id'
+    DataSource = conexao_db.DSPacientes
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGray
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 558
+    Width = 513
+    Height = 190
+    Caption = 'Dados de Contato'
+    Color = clBtnFace
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsUnderline]
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    object Label4: TLabel
+      Left = 16
+      Top = 43
+      Width = 85
+      Height = 23
+      Caption = 'Telefone'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Georgia'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 16
+      Top = 109
+      Width = 65
+      Height = 23
+      Caption = 'E-mail'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Georgia'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DBEdit4: TDBEdit
+      Left = 16
+      Top = 72
+      Width = 189
+      Height = 31
+      Cursor = crIBeam
+      DataField = 'telefone'
+      DataSource = conexao_db.DSPacientes
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGray
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object DBEdit5: TDBEdit
+      Left = 16
+      Top = 138
+      Width = 461
+      Height = 31
+      Cursor = crIBeam
+      DataField = 'email'
+      DataSource = conexao_db.DSPacientes
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGray
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Top = 245
+    Width = 513
+    Height = 307
+    Caption = 'Endere'#231'o'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Verdana'
+    Font.Style = [fsBold, fsUnderline]
+    ParentFont = False
+    TabOrder = 3
+    object Label7: TLabel
+      Left = 16
+      Top = 37
+      Width = 94
+      Height = 23
+      Caption = 'Endere'#231'o'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Georgia'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 16
+      Top = 112
+      Width = 64
+      Height = 23
+      Caption = 'Bairro'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Georgia'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 299
+      Top = 112
+      Width = 81
+      Height = 23
+      Caption = 'N'#250'mero'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Georgia'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label11: TLabel
+      Left = 16
+      Top = 194
+      Width = 69
+      Height = 23
+      Caption = 'Cidade'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Georgia'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DBEdit6: TDBEdit
+      Left = 16
+      Top = 66
+      Width = 461
+      Height = 31
+      Cursor = crIBeam
+      DataField = 'endereco'
+      DataSource = conexao_db.DSPacientes
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGray
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object DBEdit7: TDBEdit
+      Left = 16
+      Top = 141
+      Width = 265
+      Height = 31
+      Cursor = crIBeam
+      DataField = 'bairro'
+      DataSource = conexao_db.DSPacientes
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGray
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+    object DBEdit8: TDBEdit
+      Left = 299
+      Top = 141
+      Width = 178
+      Height = 31
+      Cursor = crIBeam
+      DataField = 'numero'
+      DataSource = conexao_db.DSPacientes
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGray
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object DBEdit9: TDBEdit
+      Left = 16
+      Top = 231
+      Width = 461
+      Height = 31
+      Cursor = crIBeam
+      DataField = 'cidade'
+      DataSource = conexao_db.DSPacientes
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGray
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 600
+    Top = 208
+    Width = 470
+    Height = 465
+    DataSource = conexao_db.DSPacientes
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'nome'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Title.Alignment = taCenter
+        Title.Caption = 'Pacientes Cadastrados'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -19
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 600
+    Top = 699
+    Width = 470
+    Height = 49
+    DataSource = conexao_db.DSPacientes
+    TabOrder = 5
+  end
+  object DBEdit2: TDBEdit
+    Left = 16
+    Top = 208
+    Width = 505
+    Height = 31
+    Cursor = crIBeam
+    DataField = 'nome'
+    DataSource = conexao_db.DSPacientes
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGray
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object DBEdit3: TDBEdit
+    Left = 116
+    Top = 136
+    Width = 149
+    Height = 31
+    Cursor = crIBeam
+    DataField = 'cpf'
+    DataSource = conexao_db.DSPacientes
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGray
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object buscaPaciente: TSearchBox
+    Left = 600
+    Top = 160
+    Width = 249
+    Height = 31
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnChange = buscaPacienteChange
+  end
 end
