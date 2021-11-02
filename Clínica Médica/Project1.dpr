@@ -11,7 +11,8 @@ uses
   cad_pacientes in 'cad_pacientes.pas' {Form_pacientes},
   cad_medicos in 'cad_medicos.pas' {Form_medicos},
   cad_especialidades in 'cad_especialidades.pas' {Form_especialidades},
-  cad_agendamentos in 'cad_agendamentos.pas' {Form_agendamentos};
+  cad_agendamentos in 'cad_agendamentos.pas' {Form_agendamentos},
+  conexao in 'conexao.pas' {conexao_db: TDataModule};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(TForm_medicos, Form_medicos);
   Application.CreateForm(TForm_especialidades, Form_especialidades);
   Application.CreateForm(TForm_agendamentos, Form_agendamentos);
+  Application.CreateForm(Tconexao_db, conexao_db);
   Application.Run;
 end.

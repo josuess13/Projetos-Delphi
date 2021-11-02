@@ -53,7 +53,7 @@ object conexao_db: Tconexao_db
     Left = 184
     Top = 16
   end
-  object DataSource2: TDataSource
+  object DSMedicos: TDataSource
     DataSet = TBMedicos
     Left = 184
     Top = 64

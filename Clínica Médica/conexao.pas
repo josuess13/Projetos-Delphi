@@ -18,7 +18,7 @@ type
     TBEspecialidades: TFDTable;
     TBAgendamentos: TFDTable;
     DSPacientes: TDataSource;
-    DataSource2: TDataSource;
+    DSMedicos: TDataSource;
     DSEspecialidades: TDataSource;
     DSAgendamentos: TDataSource;
   private
